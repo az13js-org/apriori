@@ -64,6 +64,28 @@ class AssociationPair
     }
 
     /**
+     * 并集的支持度
+     *
+     * @return float
+     * @author az13js
+     */
+    public function getSupport(): float
+    {
+        return $this->support;
+    }
+
+    /**
+     * 置信度
+     *
+     * @return float
+     * @author az13js
+     */
+    public function getConfidence(): float
+    {
+        return $this->confidence;
+    }
+
+    /**
      * 获取 $parent 除了 $sub 之外的子集
      *
      * @param ItemSet $sub
