@@ -40,9 +40,22 @@ function showMemoryInfo()
 	) . ' ' . ['b','kb','mb','gb','tb','pb'][$i];
 }
 
+$startTime = new Timer\Timer();
+
 $datas = getDatas();
+
+$createDatasTime = new Timer\Timer();
+echo 'Create data: ' . ($createDatasTime->sub($startTime)) . ' sec' . PHP_EOL;
+
+$createObjectAndRunBefore = new Timer\Timer();
 $data = new Apriori\Apriori(0.006, 0.3, $datas);
+$createObjectAndRunAfter = new Timer\Timer();
+echo 'Create object and calculate: ' . ($createObjectAndRunAfter->sub($createObjectAndRunBefore)) . ' sec' . PHP_EOL;
+
+$echoDataBefore = new Timer\Timer();
 foreach ($data->getAssociationRule()->getAssociationPairs() as $pair) {
     echo implode(',', $pair->getFromItemSet()->getItems()) . '->' . implode(',', $pair->getToItemSet()->getItems()) . ' Support:' . $pair->getSupport() . ' Confidence:' . $pair->getConfidence() . PHP_EOL;
 }
+$echoDataAfter = new Timer\Timer();
+echo 'Print data: ' . ($echoDataAfter->sub($echoDataBefore)) . ' sec' . PHP_EOL;
 showMemoryInfo();
