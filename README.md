@@ -158,8 +158,9 @@ Apriori算法的目标是得到一个项集集合中的频繁项集的子集之�
 
 ## 参考材料
 
-1. [Apriori算法](https://baike.baidu.com/item/Apriori/2000746 "Apriori算法 来自百度百科")
-2. [数据挖掘十大算法之Apriori详解](https://blog.csdn.net/baimafujinji/article/details/53456931 "数据挖掘十大算法之Apriori详解 来自CSDN")
-3. [Apriori算法详解](https://www.jianshu.com/p/ff82fb98855d "Apriori算法详解 来自简书")
-4. [Apriori算法详解](https://www.cnblogs.com/likui360/p/7721806.html "来自博客园")
-5. [关联分析](https://sq.163yun.com/blog/article/183290661454045184 "来自网易云")
+1. [smarty-kiki/ML-Lesson-1](https://github.com/smarty-kiki/ML-Lesson-1)
+2. [Apriori算法](https://baike.baidu.com/item/Apriori/2000746 "Apriori算法 来自百度百科")
+3. [数据挖掘十大算法之Apriori详解](https://blog.csdn.net/baimafujinji/article/details/53456931 "数据挖掘十大算法之Apriori详解 来自CSDN")
+4. [Apriori算法详解](https://www.jianshu.com/p/ff82fb98855d "Apriori算法详解 来自简书")
+5. [Apriori算法详解](https://www.cnblogs.com/likui360/p/7721806.html "来自博客园")
+6. [关联分析](https://sq.163yun.com/blog/article/183290661454045184 "来自网易云")
